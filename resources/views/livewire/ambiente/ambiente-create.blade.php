@@ -1,0 +1,26 @@
+<div class="container-fluid d-flex justify-content-center">
+    <div class="card text-bg-light p-3" style="width: auto;">
+        <h3>Cadastro de Ambiente</h3>
+        <div class="mt-5 ">
+            <form class="row g-3"wire:submit.prevent='store'>
+                <div class="col-12">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" wire:model='nome'>
+                </div>
+                <div class="col-12">
+                    <label for="descricao" class="form-label">Descrição</label>
+                    <input type="text" class="form-control" id="descricao" wire:model='descricao'>
+                </div>
+                <div class="col-md-12">
+                    <label for="status" class="form-label">Status</label>
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" wire:wire:model='status'>
+                    <label class="form-check-label" for="defaultCheck1">
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
